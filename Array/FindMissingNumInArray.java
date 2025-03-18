@@ -92,15 +92,15 @@ public class FindMissingNumInArray {
    // }
 
    public static void optimalMissingNumber2(int[] nums){
-      // 🎯 XOR 
-      // 👉🏻 XOR of same num -> 0
-      // 👉🏻 XOR of a num with 0 -> the num
+         // 🎯 XOR 
+         // 👉🏻 XOR of same num -> 0
+         // 👉🏻 XOR of a num with 0 -> the num
 
       int xor1 = 0, xor2 = 0;
       int n = nums.length;
 
       for (int i = 0; i < nums.length+1; i++) {
-         if(i != nums.length){
+         if(i != nums.length){   
             xor1 = nums[i] ^ xor1; // 1^0 -> 1
             // 1^2^..N
          }

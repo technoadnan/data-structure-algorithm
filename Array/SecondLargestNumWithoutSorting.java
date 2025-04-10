@@ -11,7 +11,7 @@ public class SecondLargestNumWithoutSorting {
          } else if (arr[i] < secondSmall && arr[i] != small) {
             secondSmall = arr[i];
          }
-      }
+      } 
 
       return secondSmall;
    }
@@ -58,7 +58,7 @@ public class SecondLargestNumWithoutSorting {
       // int[] arr = {3,43,443,4,45,7,6,56};
       // int[] arr = {10, 5, 10};
       int[] arr = {10, 10, 10};
-      int a = solution(arr);
+      // int a = solution(arr);
       int b = solution2(arr);
       System.out.println(b);
 
